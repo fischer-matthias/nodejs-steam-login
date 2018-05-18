@@ -7,7 +7,7 @@ app.use(require('express-session')({ resave: false, saveUninitialized: false, se
 app.use(steam.middleware({
 	realm: 'http://localhost:3000/', 
 	verify: 'http://localhost:3000/verify',
-	apiKey: 'DD90123A70E8A78090A22960275A8EF4'}
+	apiKey: 'apiKey'}
 ));
 
 app.get('/', function(req, res) {
